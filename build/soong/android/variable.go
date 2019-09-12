@@ -96,6 +96,9 @@ type Product_variables struct {
     Target_enforce_ab_ota_partition_list struct {
         Cflags []string
     }
+	Target_needs_netd_direct_connect_rule struct {
+		Cppflags []string
+	}
 }
 
 type ProductVariables struct {
@@ -129,4 +132,5 @@ type ProductVariables struct {
 	Target_surfaceflinger_fod_lib			*string `json:",omitempty"`
 	Recovery_skip_ev_rel_input				*bool `json:",omitempty"`
     Target_enforce_ab_ota_partition_list    *bool `json:",omitempty"`
+	Target_needs_netd_direct_connect_rule  *bool `json:",omitempty"`
 }

@@ -16,6 +16,7 @@ $(call add_json_bool,	Uses_qcom_bsp_legacy,						$(filter true,$(TARGET_USES_QCO
 $(call add_json_bool,	Has_legacy_camera_hal1,						$(filter true,$(TARGET_HAS_LEGACY_CAMERA_HAL1)))
 $(call add_json_bool,	Supports_extended_compress_format,			$(filter true,$(AUDIO_FEATURE_ENABLED_EXTENDED_COMPRESS_FORMAT)))
 $(call add_json_bool,	Target_enforce_ab_ota_partition_list,		$(filter true,$(TARGET_ENFORCE_AB_OTA_PARTITION_LIST)))
+$(call add_json_bool, 	Target_needs_netd_direct_connect_rule, 		$(filter true,$(TARGET_NEEDS_NETD_DIRECT_CONNECT_RULE)))
 
 $(call add_json_str_omitempty,	Additional_gralloc_10_usage_bits,	$(TARGET_ADDITIONAL_GRALLOC_10_USAGE_BITS))
 $(call add_json_str_omitempty,	Target_process_sdk_version_override,$(TARGET_PROCESS_SDK_VERSION_OVERRIDE))
